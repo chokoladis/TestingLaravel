@@ -1,0 +1,15 @@
+// variebles
+
+    $bg_body: rgb(255, 161, 20);
+    $color: rgb(255, 255, 255);
+
+// 
+
+body{
+    background: $bg_body;
+    color: $color;
+}
+
+.form_contact .form-group{
+    margin-bottom: 10px;
+}
