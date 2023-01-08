@@ -7,7 +7,10 @@
 @endsection
 
 @section('content')
-    <form action="/contact/submit" method="post" class="form_contact">
+    <form action="{{ route('contact-form') }}" method="post" class="form_contact">
+
+        @csrf
+
         <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="text" name="name" id="name" class="form-control">
