@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/app.css">
     
 </head>
 <body>
@@ -17,6 +17,13 @@
     @endif
     
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                @include('inc.messages')
+            </div>
+        </div>
+        
+
         <div class="row">
             <div class="col-8">
                 @yield('first_h1')
