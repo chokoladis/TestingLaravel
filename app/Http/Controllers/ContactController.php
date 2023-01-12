@@ -19,5 +19,16 @@ class ContactController extends Controller
 
         return redirect()->route('page-home')->with('success', 'Сообщение успешно отправлено');
     }
-    
+ 
+    public function allData(){
+        $contact = new Contact();
+        // dd($contact->all());
+        
+        // dd(Contact::all());
+
+        // return view('messages', ['data' => Contact::all() ]);
+        // return view('messages', ['data' => $contact->inRandomOrder()->get() ]);
+        // return view('messages', ['data' => $contact->orderBy('id', 'asc')->skip(2)->take(3)->get() ]);
+        return view('messages', ['data' => $contact->where('name', 'like', 'И%' )->get() ]);
+    }
 }

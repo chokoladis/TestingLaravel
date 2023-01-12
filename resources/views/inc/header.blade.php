@@ -7,5 +7,6 @@
         </a>
         <a class="py-2 d-none d-md-inline-block" href="{{ route('page-about') }}">About</a>
         <a class="py-2 d-none d-md-inline-block" href="{{ route('page-contact') }}">Contact</a>
+        <a class="py-2 d-none d-md-inline-block" href="{{ route('contact-data') }}">Contact messages</a>
       </div>
     </nav>
