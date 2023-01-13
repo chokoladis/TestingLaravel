@@ -17,7 +17,10 @@
                     <p>{{ $messObj->message }}</p>
                     <small>{{ $messObj->created_at }}</small>
                 </div>
-                <button class="btn btn-primary h-50">Подробнее</button>
+                <a href="{{ route('contact-message-one', $messObj->id )  }}">
+                    <button class="btn btn-primary h-50">Подробнее</button>
+                </a>
+                
             </div>
 
         @endforeach
